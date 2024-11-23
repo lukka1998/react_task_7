@@ -17,19 +17,23 @@ const MainFaqCard = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-  const containerStyle = {
-    width:windowWidth <= 500 ? "327px": '920px',
-    display: 'flex',
-    flexDirection: windowWidth <= 500 ? 'column' : 'row',
-    padding: '30px',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    flexShrink: 0,
-    borderRadius: '23px',
-    background: '#FFF',
-    boxShadow: '0px 50px 50px -20px rgba(53, 18, 122, 0.50)',
-    height:windowWidth <= 500 ? "535px":"509px"
+
+  const styles ={
+    container: {
+      width: windowWidth <= 500 ? "327px" : "920px",
+      display: 'flex',
+      flexDirection: windowWidth <= 500 ? "column" : "row",
+      padding: '30px',
+      justifyContent: 'space-around',
+      alignItems: 'center',
+      flexShrink: 0,
+      borderRadius: '23px',
+      background: '#FFF',
+      boxShadow: '0px 50px 50px -20px rgba(53, 18, 122, 0.50)',
+      height: windowWidth <= 500 ? "535px" : "509px",
+    },
   };
+  
   const imagestyle = {
     marginLeft: windowWidth <= 500 ? " 0": "-100px",
     marginTop: windowWidth <= 500 ? " -230px": "0",
@@ -38,7 +42,7 @@ const MainFaqCard = () => {
   // this is use because i used inline style and its difficult to create respnsive design so  i googled that
     return (
         
-        <div style={containerStyle}>
+        <div style={styles.container as React.CSSProperties}>
             <div>
                 <img style={imagestyle} src={image} alt="" />
 
