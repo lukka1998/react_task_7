@@ -1,4 +1,3 @@
-import React from 'react';
 import FaqQuestion from '../FaqQuestion/FaqQuestion';
 
 const FaQList = () => {

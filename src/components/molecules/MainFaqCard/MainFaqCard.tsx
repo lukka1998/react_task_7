@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 import FaQList from '../../atoms/FaQL/FaQlist';
 import image from "../../../assets/illustration-woman-online-desktop.svg"
