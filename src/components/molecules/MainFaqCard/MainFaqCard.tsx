@@ -43,6 +43,7 @@ const MainFaqCard = () => {
     return (
         
         <div style={styles.container as React.CSSProperties}>
+          {/* flexdirection is type errorad miwerda undefined imitom rom bevri tipi aqvs da davgoogle  */}
             <div>
                 <img style={imagestyle} src={image} alt="" />
 
