@@ -1,6 +1,5 @@
 
 import './App.css'
-import FaQList from './components/atoms/FaQL/FaQlist'
 import MainFaqCard from './components/molecules/MainFaqCard/MainFaqCard'
 function App() {
   
